@@ -1,0 +1,49 @@
+@font-face { font-family: Saphile; src: url('./assets/Saphile-Regular.woff'); } 
+
+#root {
+  margin: 0 auto;
+}
+
+.profile {
+  margin: 0 auto;
+  margin-top: 2.5vw;
+  width: 90vw;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.pic { 
+  flex: 0 1 0%;
+  margin: 0 auto;  
+
+}
+.profile_pic { 
+  width: 20vw;
+  min-width: 200px;
+  border: 30px solid transparent;
+  border-image: url(/src/assets/macastill_border.png) 180 round;
+  border-radius: 0.25%;
+  background-color: black;
+  box-shadow: -5px 5px 5px rgb(136, 136, 136);
+}
+
+.bio{ 
+  font-family: Saphile;
+  flex: 1 1 70%;
+}
+
+.name {
+  margin: 0 auto;
+  font-size: clamp(4em, 10vw, 7em);
+}
+
+.degree { 
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.desc {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
+}

@@ -1,0 +1,104 @@
+.wrapper{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.timeline { 
+    position: relative; 
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 1rem;
+}
+
+.timeline::-webkit-scrollbar {
+    width: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 4px;
+}
+
+.timeline-window {
+    scroll-behavior: smooth;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgb(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgb(0, 0, 0, 0.15) !important;
+    padding: 2em 3em !important;
+}
+
+.vertical-timeline-element {
+    opacity: 0;
+}
+
+.vertical-timeline-element-content h3,
+.vertical-timeline-element-content h5,
+.vertical-timeline-element-content h6 {
+  margin: 0;
+}
+
+.vertical-timeline-element-content h5 {
+  margin-top: 0.2em;
+}
+
+.vertical-timeline-element-content h6 {
+  margin-top: 0.15em;
+}
+
+.vertical-timeline-element.in-view {
+    opacity: 1;
+    animation: timeline-bounce 600ms ease-out both;
+}
+
+
+@keyframes timeline-bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(2.5rem) scale(0.98);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-0.4rem) scale(1.02);
+    }
+    80% {
+        transform: translateY(0.2rem) scale(0.995);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.date {
+    color: black;
+}
+
+#description {
+    margin: 1.5em 0 2em 0;
+}
+
+@media only screen and (max-width: 1700px){
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: rgb(44,44,44);
+        margin-top: 1.5em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vertical-timeline-element {
+        opacity: 1;
+    }
+
+    .vertical-timeline-element.in-view {
+        animation: none;
+    }
+
+    .vertical-timeline-element.in-view .vertical-timeline-element-content,
+    .vertical-timeline-element.in-view .vertical-timeline-element-icon {
+        animation: none;
+    }
+}
