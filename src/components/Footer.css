@@ -1,0 +1,26 @@
+.footer_container { 
+    width: 100vw;    
+    height: 100px; 
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% -50vw);
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: aliceblue;
+}
+
+.footer_title {
+    font-size: 1rem;
+}
+
+.footer_link {
+    height: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo {
+    height: 100%;
+}

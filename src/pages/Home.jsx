@@ -1,5 +1,6 @@
 import Nav from "../components/Nav";
-import Profile from "../components/profile";
+import Footer from "../components/Footer";
+import Profile from "../components/Profile";
 import Timeline from "../components/Timeline";
 import './Home.css'
 
@@ -13,6 +14,7 @@ function Home() {
       </div>
       <Profile/>
       <Timeline />
+      <Footer/>
     </div>
   )
 }
