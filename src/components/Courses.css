@@ -1,9 +1,9 @@
 .course_list {
-    width: 85vw;
+    width: 90vw;
     margin: 0 auto;
 }
 .course {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     margin-bottom: 10px;
     border-bottom: 1px solid black;
@@ -20,7 +20,7 @@
 
 .course .course_description {
     margin-left: 30px;
-    width: 80%;
+    width: 85%;
     font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
