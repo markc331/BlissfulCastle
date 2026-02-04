@@ -1,5 +1,5 @@
 import './Footer.css';
-import BlissfulCastle from "/blissful_castle.png";
+import BlissfulCastle from "/blissful_castle.svg";
 import GitLogo from '../assets/GitHub_Invertocat_black.png';
 import LinkedInLogo from '../assets/InBug-Black.png';
 

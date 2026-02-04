@@ -20,7 +20,7 @@ function Nav() {
   
   return (
     <nav className="nav" ref={navRef}>
-      <a href="/" className="title"><h1>BlissfulCastle</h1></a>
+      <a href="/" className="title"><h1 data-nav-title>BlissfulCastle</h1></a>
       <button 
         className = "hamburger"
         aria-label="Toggle menu"

@@ -12,7 +12,7 @@ function Courses() {
                         <h3>{element.title}</h3>
                         <p className='course_description'>{element.description}</p>
                         <div className="course_actions">
-                            {element.git? (<a href={element.git}><button className="course_code" style={{width: "0.4vw", minWidth: "50px;"}}><img src={GithubLogo} className="ghLogo"/><p className='ghName'>Github</p></button></a>) : null}
+                            {element.git? (<a href={element.git}><button className="course_code" style={{width: "0.4vw", minWidth: "100px"}}><img src={GithubLogo} className="ghLogo"/><p className='ghName'>Github</p></button></a>) : null}
                         </div>
                     </div>
                 ))}
